@@ -92,7 +92,7 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-ear-plugin</artifactId>
 				<configuration>
-					<displayName>staging-extension.ear</displayName>
+					<displayName>staging-extension-${project.version}.ear</displayName>
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>

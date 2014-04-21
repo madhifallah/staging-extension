@@ -75,13 +75,13 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-ear-plugin</artifactId>
 				<configuration>
-					<displayName>staging-extension.ear</displayName>
+					<displayName>staging-extension-${project.version}.ear</displayName>
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
 						</manifest>
 						<manifestEntries>
-							<Dependencies>org.gatein,org.gatein.lib,javax.jcr.api,org.apache.commons.io,org.apache.commons-fileupload</Dependencies>
+							<Dependencies>deployment.platform.ear,org.gatein,org.gatein.lib,javax.jcr.api,org.apache.commons.io,org.apache.commons-fileupload</Dependencies>
 						</manifestEntries>
 					</archive>
 					<modules>
